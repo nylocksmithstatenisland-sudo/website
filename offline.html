@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1e3a8a">
+    <title>Offline - Locksmith Staten Island NY</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .offline-icon {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 30px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: 600;
+        }
+
+        .btn-primary {
+            background: #fff;
+            color: #1e3a8a;
+        }
+
+        .btn-primary:hover {
+            background: #f0f0f0;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            border: 2px solid #fff;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .emergency-info {
+            margin-top: 40px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
+            border-left: 4px solid #fff;
+        }
+
+        .emergency-info h2 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .phone-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 15px 0;
+            letter-spacing: 1px;
+        }
+
+        .phone-link {
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .phone-link:hover {
+            transform: scale(1.05);
+        }
+
+        .status {
+            margin-top: 20px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+
+        .status.online {
+            background: rgba(34, 197, 94, 0.3);
+        }
+
+        .status.offline {
+            background: rgba(239, 68, 68, 0.3);
+        }
+
+        @media (max-width: 640px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .phone-number {
+                font-size: 1.5rem;
+            }
+
+            .container {
+                padding: 30px 20px;
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+
+        .pulse {
+            animation: pulse 2s ease-in-out infinite;
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JM684FHXFC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-JM684FHXFC');
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="offline-icon">
+            📡
+        </div>
+        
+        <h1>You're Offline</h1>
+        
+        <p>
+            It looks like you've lost your internet connection. Don't worry - you can still access previously viewed pages and contact us directly.
+        </p>
+
+        <div class="status offline pulse" id="status">
+            ⚠️ No Internet Connection
+        </div>
+
+        <div class="buttons">
+            <button onclick="window.location.reload()" class="btn btn-primary">
+                🔄 Try Again
+            </button>
+            <a href="/" class="btn btn-secondary">
+                🏠 Go to Homepage
+            </a>
+        </div>
+
+        <div class="emergency-info">
+            <h2>🚨 Need Emergency Help?</h2>
+            <p>You can still call us directly - no internet required!</p>
+            <div class="phone-number">
+                <a href="tel:+17188510003" class="phone-link">
+                    📞 (718) 851-0003
+                </a>
+            </div>
+            <p style="font-size: 0.95rem; margin-top: 15px;">
+                Available 24/7 for emergency locksmith services in Staten Island, NY
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Check for online status
+        function updateOnlineStatus() {
+            const statusEl = document.getElementById('status');
+            if (navigator.onLine) {
+                statusEl.textContent = '✅ Back Online - Refreshing...';
+                statusEl.className = 'status online';
+                // Automatically reload when back online
+                setTimeout(() => {
+                    window.location.reload();
+                }, 1000);
+            } else {
+                statusEl.textContent = '⚠️ No Internet Connection';
+                statusEl.className = 'status offline pulse';
+            }
+        }
+
+        // Listen for online/offline events
+        window.addEventListener('online', updateOnlineStatus);
+        window.addEventListener('offline', updateOnlineStatus);
+
+        // Check status on load
+        updateOnlineStatus();
+
+        // Periodically check connection
+        setInterval(() => {
+            if (navigator.onLine) {
+                updateOnlineStatus();
+            }
+        }, 5000);
+    </script>
+</body>
+</html>

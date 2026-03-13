@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+
+# Block access to admin areas (if any)
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+
+# Block access to sensitive files
+Disallow: /assets/private/
+Disallow: /config/
+Disallow: /logs/
+Disallow: /cdn-cgi/
+
+# Allow access to CSS, JS, and image files
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/images/
+
+# Allow access to sitemap
+Allow: /sitemap.xml
+
+# Crawl delay (optional - helps with server load)
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://www.locksmithstatenisland.nyc/sitemap.xml
