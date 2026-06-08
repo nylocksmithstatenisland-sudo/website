@@ -1,0 +1,34 @@
+# Build tools
+node_modules/
+dist/
+build/
+.cache/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+
+# Error logs
+error_log
+*.log
+
+# Kilo AI files
+.kilo/
+TASK_PLAN.md
+file_list.txt
+
+# Temporary files
+*.tmp
+*.bak
+*.temp
+*.py
