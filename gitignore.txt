@@ -1,3 +1,0 @@
-.kilo/
-TASK_PLAN.md
-file_list.txt
