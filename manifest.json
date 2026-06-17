@@ -80,7 +80,7 @@
       "name": "Emergency Service",
       "short_name": "Emergency",
       "description": "24/7 Emergency Locksmith Service",
-      "url": "/services/emergency-locksmith.html",
+      "url": "/services/emergency-locksmith",
       "icons": [
         {
           "src": "/assets/images/icons/icon-96x96.png",
@@ -104,7 +104,7 @@
       "name": "Contact Us",
       "short_name": "Contact",
       "description": "Get in touch with us",
-      "url": "/contact.html",
+      "url": "/contact",
       "icons": [
         {
           "src": "/assets/images/icons/icon-96x96.png",

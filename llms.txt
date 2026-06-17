@@ -83,99 +83,99 @@ We serve all Staten Island neighborhoods including:
 ## Website Structure
 
 ### Main Pages
-- Homepage (index.html) - Overview of all services
-- About (about.html) - Company information and credentials
-- Contact (contact.html) - Contact form and business information
+- Homepage (index) - Overview of all services
+- About (about) - Company information and credentials
+- Contact (contact) - Contact form and business information
 - Services Overview - Detailed service category pages
-- Blog (blog.html) - Educational content and guides
-- Locksmith Near Me (locksmith-near-me.html) - Location-based service pages
+- Blog (blog) - Educational content and guides
+- Locksmith Near Me (locksmith-near-me) - Location-based service pages
 
 ### Service Category Pages
-- /services/residential-locksmith.html
-- /services/commercial-locksmith.html
-- /services/automotive-locksmith.html
-- /services/emergency-locksmith.html
-- /services/safe-opening-security.html
-- /services/lock-installation-repair.html
-- /services/key-duplication-rekeying.html
+- /services/residential-locksmith
+- /services/commercial-locksmith
+- /services/automotive-locksmith
+- /services/emergency-locksmith
+- /services/safe-opening-security
+- /services/lock-installation-repair
+- /services/key-duplication-rekeying
 
 ### Detailed Service Pages
 
 #### Residential Services
-- /services/residential-locksmith/lock-installation.html
-- /services/residential-locksmith/lock-rekeying.html
-- /services/residential-locksmith/key-duplication.html
-- /services/residential-locksmith/smart-lock-installation.html
-- /services/residential-locksmith/door-lock-repair.html
+- /services/residential-locksmith/lock-installation
+- /services/residential-locksmith/lock-rekeying
+- /services/residential-locksmith/key-duplication
+- /services/residential-locksmith/smart-lock-installation
+- /services/residential-locksmith/door-lock-repair
 
 #### Commercial Services
-- /services/commercial-locksmith/access-control.html
-- /services/commercial-locksmith/high-security-locks.html
-- /services/commercial-locksmith/master-key-systems.html
-- /services/commercial-locksmith/office-lockout.html
+- /services/commercial-locksmith/access-control
+- /services/commercial-locksmith/high-security-locks
+- /services/commercial-locksmith/master-key-systems
+- /services/commercial-locksmith/office-lockout
 
 #### Automotive Services
-- /services/automotive-locksmith/car-key-replacement.html
-- /services/automotive-locksmith/car-door-unlocking.html
-- /services/automotive-locksmith/transponder-key-service.html
-- /services/automotive-locksmith/key-fob-programming.html
-- /services/automotive-locksmith/ignition-repair.html
-- /services/automotive-locksmith/trunk-unlocking.html
+- /services/automotive-locksmith/car-key-replacement
+- /services/automotive-locksmith/car-door-unlocking
+- /services/automotive-locksmith/transponder-key-service
+- /services/automotive-locksmith/key-fob-programming
+- /services/automotive-locksmith/ignition-repair
+- /services/automotive-locksmith/trunk-unlocking
 
 #### Emergency Services
-- /services/emergency-locksmith/home-lockout.html
-- /services/emergency-locksmith/car-lockout.html
-- /services/emergency-locksmith/office-lockout.html
-- /services/emergency-locksmith/lock-repair.html
+- /services/emergency-locksmith/home-lockout
+- /services/emergency-locksmith/car-lockout
+- /services/emergency-locksmith/office-lockout
+- /services/emergency-locksmith/lock-repair
 
 #### Safe & Security Services
-- /services/safe-opening-security/safe-cracking.html
-- /services/safe-opening-security/safe-repair.html
-- /services/safe-opening-security/security-consultation.html
+- /services/safe-opening-security/safe-cracking
+- /services/safe-opening-security/safe-repair
+- /services/safe-opening-security/security-consultation
 
 #### Lock Installation & Repair Services
-- /services/lock-installation-repair/lock-replacement.html
-- /services/lock-installation-repair/door-reinforcement.html
+- /services/lock-installation-repair/lock-replacement
+- /services/lock-installation-repair/door-reinforcement
 
 #### Key Duplication & Rekeying Services
-- /services/key-duplication-rekeying/key-cutting.html
-- /services/key-duplication-rekeying/rekey-service.html
+- /services/key-duplication-rekeying/key-cutting
+- /services/key-duplication-rekeying/rekey-service
 
 ### Location-Based Service Pages
-- /locksmith-near-me/st-george.html
-- /locksmith-near-me/tottenville.html
-- /locksmith-near-me/great-kills.html
-- /locksmith-near-me/new-dorp.html
-- /locksmith-near-me/westerleigh.html
-- /locksmith-near-me/midland-beach.html
-- /locksmith-near-me/eltingville.html
-- /locksmith-near-me/port-richmond.html
-- /locksmith-near-me/prince-bay.html
+- /locksmith-near-me/st-george
+- /locksmith-near-me/tottenville
+- /locksmith-near-me/great-kills
+- /locksmith-near-me/new-dorp
+- /locksmith-near-me/westerleigh
+- /locksmith-near-me/midland-beach
+- /locksmith-near-me/eltingville
+- /locksmith-near-me/port-richmond
+- /locksmith-near-me/prince-bay
 
 ### Educational Blog Content
 
-All blog posts available at /blog/*.html
+All blog posts available at /blog/*
 
-#### Automotive Topics (/blog/category/automotive.html)
-- Toyota Key Fob Battery Replacement Guide (/blog/toyota-key-fob-battery-replacement-guide.html)
-- How Long Does It Take to Program a Car Key (/blog/how-long-does-it-take-to-program-a-car-key.html)
-- Cost to Replace a Car Key in NYC (/blog/cost-to-replace-a-car-key-in-nyc.html)
-- Car Key Replacement Costs Staten Island (/blog/car-key-replacement-costs-staten-island.html)
-- Car Lockout Service Staten Island (/blog/car-lockout-service-staten-island.html)
+#### Automotive Topics (/blog/category/automotive)
+- Toyota Key Fob Battery Replacement Guide (/blog/toyota-key-fob-battery-replacement-guide)
+- How Long Does It Take to Program a Car Key (/blog/how-long-does-it-take-to-program-a-car-key)
+- Cost to Replace a Car Key in NYC (/blog/cost-to-replace-a-car-key-in-nyc)
+- Car Key Replacement Costs Staten Island (/blog/car-key-replacement-costs-staten-island)
+- Car Lockout Service Staten Island (/blog/car-lockout-service-staten-island)
 
-#### Security & Maintenance Topics (/blog/category/security-tips.html & /blog/category/maintenance.html)
-- Smart Locks Guide for Staten Island (/blog/smart-locks-guide-staten-island.html)
-- Lock Maintenance Guide Staten Island (/blog/lock-maintenance-guide-staten-island.html)
-- Commercial Security Tips Staten Island (/blog/commercial-security-tips-staten-island.html)
-- Difference Between Commercial and Residential Locks (/blog/difference-between-commercial-residential-locks.html)
+#### Security & Maintenance Topics (/blog/category/security-tips & /blog/category/maintenance)
+- Smart Locks Guide for Staten Island (/blog/smart-locks-guide-staten-island)
+- Lock Maintenance Guide Staten Island (/blog/lock-maintenance-guide-staten-island)
+- Commercial Security Tips Staten Island (/blog/commercial-security-tips-staten-island)
+- Difference Between Commercial and Residential Locks (/blog/difference-between-commercial-residential-locks)
 
-#### Emergency Services Topics (/blog/category/emergency-services.html)
-- Emergency Lockout Prevention Tips (/blog/emergency-lockout-prevention-tips.html)
-- Emergency Preparedness Staten Island (/blog/emergency-preparedness-staten-island.html)
+#### Emergency Services Topics (/blog/category/emergency-services)
+- Emergency Lockout Prevention Tips (/blog/emergency-lockout-prevention-tips)
+- Emergency Preparedness Staten Island (/blog/emergency-preparedness-staten-island)
 
 #### General Guides
-- Complete Locksmith Services Guide (/blog/complete-locksmith-services-guide-staten-island.html)
-- Choosing the Right Locksmith in Staten Island (/blog/choosing-right-locksmith-staten-island.html)
+- Complete Locksmith Services Guide (/blog/complete-locksmith-services-guide-staten-island)
+- Choosing the Right Locksmith in Staten Island (/blog/choosing-right-locksmith-staten-island)
 
 ## Key Features
 
@@ -210,8 +210,8 @@ Blog content is organized into categories:
 
 ## Privacy & Legal
 
-- Privacy Policy (privacy.html)
-- Terms of Service (terms.html)
+- Privacy Policy (privacy)
+- Terms of Service (terms)
 
 ## Last Updated
 

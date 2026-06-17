@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
         newNav.className = 'py-4 space-y-2';
         newNav.innerHTML = `
             <a href="/" class="block px-4 py-2 text-secondary hover:text-primary transition-colors">Home</a>
-            <a href="/about.html" class="block px-4 py-2 text-secondary hover:text-primary transition-colors">About</a>
+            <a href="/about" class="block px-4 py-2 text-secondary hover:text-primary transition-colors">About</a>
             
             <!-- Services Mega Menu -->
             <div class="px-4 py-2">
@@ -43,8 +43,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 </div>
             </div>
 
-            <a href="/blog.html" class="block px-4 py-2 text-secondary hover:text-primary transition-colors">Blog</a>
-            <a href="/contact.html" class="block px-4 py-2 text-secondary hover:text-primary transition-colors">Contact</a>
+            <a href="/blog" class="block px-4 py-2 text-secondary hover:text-primary transition-colors">Blog</a>
+            <a href="/contact" class="block px-4 py-2 text-secondary hover:text-primary transition-colors">Contact</a>
             <div class="px-4 pt-4">
                 <a href="tel:+17188316269" class="bg-accent text-dark font-semibold px-6 py-3 rounded-md hover:bg-accent-hover transition-colors w-full text-center block">
                     Call (718) 831-6269
@@ -88,7 +88,7 @@ async function populateMegaMenu() {
             const serviceGroup = document.createElement('div');
             serviceGroup.className = 'py-2';
             
-            const serviceUrl = `/services/${service.toLowerCase().replace(/ /g, '-')}.html`;
+            const serviceUrl = `/services/${service.toLowerCase().replace(/ /g, '-')}`;
 
             const categoryLink = document.createElement('a');
             categoryLink.href = serviceUrl;
@@ -147,10 +147,10 @@ function categorizeUrls(urls) {
     urls.forEach(url => {
         if (url.includes('/services/')) {
             const parts = url.split('/services/')[1].split('/');
-            const serviceName = parts[0].replace('.html', '').replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+            const serviceName = parts[0].replace('', '').replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
 
             if (parts.length > 1) {
-                const subServiceName = parts[1].replace('.html', '').replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+                const subServiceName = parts[1].replace('', '').replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
                 if (!services[serviceName]) {
                     services[serviceName] = [];
                 }
@@ -161,7 +161,7 @@ function categorizeUrls(urls) {
                 }
             }
         } else if (url.includes('/locksmith-near-me/')) {
-            const areaName = url.split('/locksmith-near-me/')[1].replace('.html', '').replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+            const areaName = url.split('/locksmith-near-me/')[1].replace('', '').replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
             service_areas.push({ name: areaName, url });
         }
     });
