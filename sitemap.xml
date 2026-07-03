@@ -176,7 +176,7 @@
 
   <url>
     <loc>https://www.locksmithstatenisland.nyc/services/automotive-locksmith/car-door-unlocking</loc>
-    <lastmod>2026-03-06</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -249,13 +249,6 @@
 
   
   <url>
-    <loc>https://www.locksmithstatenisland.nyc/services/emergency-locksmith/lockout</loc>
-    <lastmod>2026-03-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-  <url>
     <loc>https://www.locksmithstatenisland.nyc/services/emergency-locksmith/home-lockout</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -264,7 +257,7 @@
 
   <url>
     <loc>https://www.locksmithstatenisland.nyc/services/emergency-locksmith/car-lockout</loc>
-    <lastmod>2026-06-22</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -435,7 +428,7 @@
 
   <url>
     <loc>https://www.locksmithstatenisland.nyc/blog/car-lockout-service-staten-island</loc>
-    <lastmod>2026-06-02</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -469,13 +462,6 @@
   </url>
 
   <url>
-    <loc>https://www.locksmithstatenisland.nyc/blog/car-lockout-service-staten-island</loc>
-    <lastmod>2026-06-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
     <loc>https://www.locksmithstatenisland.nyc/blog/smart-lock-installation-guide-staten-island</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
@@ -496,21 +482,7 @@
     <priority>0.5</priority>
   </url>
 
-   
-  <url>
-    <loc>https://www.locksmithstatenisland.nyc/services/emergency-locksmith/car-lockout</loc>
-    <lastmod>2026-06-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://www.locksmithstatenisland.nyc/services/automotive-locksmith/car-door-unlocking</loc>
-    <lastmod>2026-06-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
+  
   <url>
     <loc>https://www.locksmithstatenisland.nyc/blog/category/maintenance</loc>
     <lastmod>2026-05-29</lastmod>
