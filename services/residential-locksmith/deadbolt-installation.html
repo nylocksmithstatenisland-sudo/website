@@ -93,13 +93,16 @@
         "availability": "https://schema.org/InStock",
         "priceCurrency": "USD",
         "priceRange": "$85-$350",
-        "priceValidUntil": "2026-12-31",
         "url": "https://www.locksmithstatenisland.nyc/services/residential-locksmith/deadbolt-installation"
       },
       "availableChannel": {
         "@type": "ServiceChannel",
         "serviceUrl": "https://www.locksmithstatenisland.nyc/services/residential-locksmith/deadbolt-installation",
-        "servicePhone": "+1-718-831-6269",
+        "servicePhone": {
+          "@type": "ContactPoint",
+          "telephone": "+1-718-831-6269",
+          "contactType": "customer service"
+        },
         "availableLanguage": "English"
       }
     }
