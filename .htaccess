@@ -58,3 +58,14 @@ RewriteRule ^(.+)/$ /$1 [L,R=301]
 ############################################
 ErrorDocument 404 /404
 ErrorDocument 500 /500
+
+############################################
+# 9️⃣ FIX CHARSET ENCODING
+############################################
+AddDefaultCharset UTF-8
+
+############################################
+# 10️⃣ FAVICON MIME TYPE
+############################################
+AddType image/x-icon .ico
+ExpiresByType image/x-icon "access plus 1 month"
