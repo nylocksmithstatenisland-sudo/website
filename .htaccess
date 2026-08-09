@@ -16,6 +16,18 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.+)/$ /$1 [L,R=301]
 
 ############################################
+# 2a️⃣ FIX BROKEN SERVICE URLS (301)
+############################################
+# /services/safe-services -> /services/safe-opening-security
+RewriteRule ^services/safe-services$ /services/safe-opening-security [L,R=301]
+# /services/key-duplication -> /services/key-duplication-rekeying
+RewriteRule ^services/key-duplication$ /services/key-duplication-rekeying [L,R=301]
+# /services -> /services/emergency-locksmith
+RewriteRule ^services$ /services/emergency-locksmith [L,R=301]
+# /assets/images/placeholder-blog.jpg -> /assets/images/locksmith-van.webp
+RewriteRule ^assets/images/placeholder-blog\.jpg$ /assets/images/locksmith-van.webp [L,R=301]
+
+############################################
 # 2b️⃣ FIX MALFORMED ASSET URLS
 # Redirect broken/malformed asset paths to correct asset locations.
 # These handle URLs like:
@@ -91,3 +103,9 @@ AddDefaultCharset UTF-8
 ############################################
 AddType image/x-icon .ico
 ExpiresByType image/x-icon "access plus 1 month"
+
+############################################
+# 11️⃣ SVG MIME TYPE
+############################################
+AddType image/svg+xml .svg
+ExpiresByType image/svg+xml "access plus 1 month"

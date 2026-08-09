@@ -14,3 +14,11 @@ https://locksmithstatenisland.nyc/* https://www.locksmithstatenisland.nyc/:splat
 /*/assets/js/* /assets/js/:splat 301
 /*/assets/images/* /assets/images/:splat 301
 
+# Fix broken service URLs
+/services/safe-services /services/safe-opening-security 301
+/services/key-duplication /services/key-duplication-rekeying 301
+/services /services/emergency-locksmith 301
+
+# Fix broken image URL
+/assets/images/placeholder-blog.jpg /assets/images/locksmith-van.webp 301
+
