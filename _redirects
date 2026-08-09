@@ -1,2 +1,16 @@
 http://locksmithstatenisland.nyc/* https://www.locksmithstatenisland.nyc/:splat 301
 https://locksmithstatenisland.nyc/* https://www.locksmithstatenisland.nyc/:splat 301
+
+# Fix malformed asset URLs (specific known patterns from crawl)
+/assets/images/assets/css/assets/js/assets/js/assets/css/styles.min.css /assets/css/styles.min.css 301
+/assets/images/assets/css/assets/js/assets/js/scripts.js /assets/js/scripts.js 301
+/assets/images/assets/css/assets/js/assets/js/scripts.min.js /assets/js/scripts.min.js 301
+/assets/images/assets/* /assets/:splat 301
+/assets/css/assets/* /assets/:splat 301
+/assets/js/assets/* /assets/:splat 301
+
+# Generic: any path containing assets/ nested under other dirs redirects to /assets/
+/*/assets/css/* /assets/css/:splat 301
+/*/assets/js/* /assets/js/:splat 301
+/*/assets/images/* /assets/images/:splat 301
+

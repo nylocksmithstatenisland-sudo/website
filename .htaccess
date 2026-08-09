@@ -16,6 +16,28 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.+)/$ /$1 [L,R=301]
 
 ############################################
+# 2b️⃣ FIX MALFORMED ASSET URLS
+# Redirect broken/malformed asset paths to correct asset locations.
+# These handle URLs like:
+#   /assets/images/assets/css/styles.min.css -> /assets/css/styles.min.css
+#   /services/assets/js/scripts.js -> /assets/js/scripts.js
+#   /blog/assets/css/assets/js/styles.min.css -> /assets/css/styles.min.css
+# This rule only triggers when "assets/" appears MORE than once in the URL,
+# so legitimate /assets/... URLs are never redirected.
+############################################
+# Count occurrences of "assets/" — only proceed if at least 2
+RewriteCond %{REQUEST_URI} assets/ [NC]
+RewriteCond %{REQUEST_URI} assets/.*assets/ [NC]
+# Extract the LAST assets/type/file and fix the URL
+RewriteRule ^.+assets/(css|js|images)/([^/]+)$ /assets/%1/%2 [L,R=301,NC]
+
+# Pattern 2 (safety): any non-/assets/ path that contains assets/ anywhere
+# (e.g. /services/assets/js/scripts.js) — captured by the greedy .+ above too
+RewriteCond %{REQUEST_URI} !^/assets/
+RewriteCond %{REQUEST_URI} assets/ [NC]
+RewriteRule ^.+assets/(css|js|images)/([^/]+)$ /assets/%1/%2 [L,R=301,NC]
+
+############################################
 # 4️⃣ SECURITY HEADERS
 ############################################
 <IfModule mod_headers.c>
@@ -56,8 +78,8 @@ RewriteRule ^(.+)/$ /$1 [L,R=301]
 ############################################
 # 8️⃣ ERROR PAGES
 ############################################
-ErrorDocument 404 /404
-ErrorDocument 500 /500
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html
 
 ############################################
 # 9️⃣ FIX CHARSET ENCODING

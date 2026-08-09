@@ -1,5 +1,5 @@
 // Service Worker for Locksmith Staten Island NY PWA
-const CACHE_NAME = 'locksmith-si-v1';
+const CACHE_NAME = 'locksmith-si-v2';
 const OFFLINE_URL = '/offline';
 
 // Files to cache immediately on install
@@ -7,8 +7,8 @@ const PRECACHE_URLS = [
   '/',
   '/index',
   '/offline',
-  '/assets/css/styles.css',
-  '/assets/js/scripts.js',
+  '/assets/css/styles.min.css',
+  '/assets/js/scripts.min.js',
   '/assets/images/locksmith-van.webp',
   '/manifest.json'
 ];
