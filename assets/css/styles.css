@@ -1,7 +1,6 @@
 /* Custom CSS for Locksmith Staten Island NY Website */
 
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;600;700;800&display=swap');
 
 /* CSS Variables for Brand Colors */
 :root {
@@ -351,11 +350,6 @@ nav a:hover {
 }
 
 /* Footer */
-footer {
-  background-color: var(--secondary-color);
-  color: white;
-  padding: 3rem 0 1rem;
-}
 
 .footer-grid {
   display: grid;
@@ -546,3 +540,10 @@ a:focus {
     display: none;
   }
 }
+
+/* Footer text colours (override the .bg-light heading rules above) */
+footer h3, footer h4, .bg-light footer h3, .bg-light footer h4 { color: #fff !important; }
+footer p, footer li, footer span, .bg-light footer p { color: var(--light-bg) !important; }
+footer a { color: var(--light-bg); }
+footer a:hover { color: var(--accent-color); }
+footer .fas, footer .fab { color: inherit; }
