@@ -22,3 +22,6 @@ https://locksmithstatenisland.nyc/* https://www.locksmithstatenisland.nyc/:splat
 # Fix broken image URL
 /assets/images/placeholder-blog.jpg /assets/images/locksmith-van.webp 301
 
+# Consolidate duplicate office-lockout page
+/services/emergency-locksmith/office-lockout /services/commercial-locksmith/office-lockout 301
+/services/emergency-locksmith/office-lockout.html /services/commercial-locksmith/office-lockout 301

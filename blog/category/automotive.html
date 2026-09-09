@@ -46,51 +46,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'; this.onload=null;">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
     <link rel="preload" href="/assets/css/styles.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/assets/css/styles.min.css"></noscript>
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/css/tailwind.min.css">
 
-    <script>
-
-      tailwind.config = {
-
-        theme: {
-
-          extend: {
-
-            colors: {
-
-              primary: '#008080',
-
-              secondary: '#5B6770',
-
-              accent: '#FFD300',
-
-              light: '#F8F9FA',
-
-              dark: '#212529',
-
-              'dark-secondary': '#495057',
-
-              'primary-hover': '#006666',
-
-              'accent-hover': '#00A3A3',
-
-              border: '#DEE2E6',
-
-              error: '#FF6B6B'
-
-            }
-
-          }
-
-        }
-
-      }
-
-    </script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JM684FHXFC"></script>
@@ -99,6 +61,36 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-JM684FHXFC');
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.locksmithstatenisland.nyc/"},
+        {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.locksmithstatenisland.nyc/blog"},
+        {"@type": "ListItem", "position": 3, "name": "Automotive", "item": "https://www.locksmithstatenisland.nyc/blog/category/automotive"}
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Automotive Locksmith Blog - Locksmith Staten Island NY",
+      "url": "https://www.locksmithstatenisland.nyc/blog/category/automotive",
+      "isPartOf": {"@type": "Blog", "name": "Locksmith Staten Island NY Blog", "url": "https://www.locksmithstatenisland.nyc/blog"},
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "url": "https://www.locksmithstatenisland.nyc/blog/car-lockout-costs-staten-island"},
+          {"@type": "ListItem", "position": 2, "url": "https://www.locksmithstatenisland.nyc/blog/car-key-replacement-costs-staten-island"},
+          {"@type": "ListItem", "position": 3, "url": "https://www.locksmithstatenisland.nyc/blog/how-long-does-it-take-to-program-a-car-key"},
+          {"@type": "ListItem", "position": 4, "url": "https://www.locksmithstatenisland.nyc/blog/car-lockout-service-staten-island"},
+          {"@type": "ListItem", "position": 5, "url": "https://www.locksmithstatenisland.nyc/blog/toyota-key-fob-battery-replacement-guide"}
+        ]
+      }
+    }
     </script>
 </head>
 
@@ -147,7 +139,7 @@
             <div>
                 <h3 class="font-semibold text-secondary mb-2"><a href="/services/emergency-locksmith" class="hover:text-primary">Emergency Locksmith</a></h3>
                 <ul>
-<li><a href="https://www.locksmithstatenisland.nyc/services/emergency-locksmith/lockout" class="block px-4 py-2 text-sm text-secondary hover:bg-light hover:text-primary">Lockout</a></li><li><a href="https://www.locksmithstatenisland.nyc/services/emergency-locksmith/home-lockout" class="block px-4 py-2 text-sm text-secondary hover:bg-light hover:text-primary">Home Lockout</a></li><li><a href="https://www.locksmithstatenisland.nyc/services/emergency-locksmith/car-lockout" class="block px-4 py-2 text-sm text-secondary hover:bg-light hover:text-primary">Car Lockout</a></li><li><a href="https://www.locksmithstatenisland.nyc/services/emergency-locksmith/office-lockout" class="block px-4 py-2 text-sm text-secondary hover:bg-light hover:text-primary">Office Lockout</a></li><li><a href="https://www.locksmithstatenisland.nyc/services/emergency-locksmith/lock-repair" class="block px-4 py-2 text-sm text-secondary hover:bg-light hover:text-primary">Lock Repair</a></li>
+<li><a href="https://www.locksmithstatenisland.nyc/services/emergency-locksmith/lockout" class="block px-4 py-2 text-sm text-secondary hover:bg-light hover:text-primary">Lockout</a></li><li><a href="https://www.locksmithstatenisland.nyc/services/emergency-locksmith/home-lockout" class="block px-4 py-2 text-sm text-secondary hover:bg-light hover:text-primary">Home Lockout</a></li><li><a href="https://www.locksmithstatenisland.nyc/services/emergency-locksmith/car-lockout" class="block px-4 py-2 text-sm text-secondary hover:bg-light hover:text-primary">Car Lockout</a></li><li><a href="https://www.locksmithstatenisland.nyc/services/emergency-locksmith/lock-repair" class="block px-4 py-2 text-sm text-secondary hover:bg-light hover:text-primary">Lock Repair</a></li>
                 </ul>
             </div>
 
@@ -436,7 +428,7 @@
 
                 <p class="text-dark-secondary mt-4 max-w-3xl mx-auto">
 
-                    <strong>Sponsored by <a href="https://www.avenuelocks.com/services/" target="_blank" rel="dofollow" class="text-primary hover:underline">Avenue Locksmith</a>:</strong> For professional automotive locksmith services beyond Staten Island, <a href="https://www.avenuelocks.com/services/" target="_blank" rel="dofollow" class="text-primary hover:underline">Avenue Locksmith</a> provides expert car key replacement, programming, and emergency lockout assistance with state-of-the-art equipment.
+                    <strong>Sponsored by <a href="https://www.avenuelocks.com/services/" target="_blank" rel="sponsored noopener" class="text-primary hover:underline">Avenue Locksmith</a>:</strong> For professional automotive locksmith services beyond Staten Island, <a href="https://www.avenuelocks.com/services/" target="_blank" rel="sponsored noopener" class="text-primary hover:underline">Avenue Locksmith</a> provides expert car key replacement, programming, and emergency lockout assistance with state-of-the-art equipment.
 
                 </p>
 
@@ -455,8 +447,7 @@
                         alt="How Much Does a Car Lockout Cost in Staten Island? Complete 2026 Pricing Guide"
                         class="w-full h-48 object-cover lazy"
                         onerror="this.src='/assets/images/locksmith-van.webp'"
-                        loading="lazy"
-                    >
+                        width="1536" height="1024" loading="eager" fetchpriority="high">
                     <div class="p-6">
                         <div class="flex items-center mb-3">
                             <span class="bg-primary text-white px-2 py-1 rounded text-xs font-medium">Automotive</span>
@@ -493,9 +484,7 @@
 
                         onerror="this.src='/assets/images/locksmith-van.webp'"
 
-                        loading="lazy"
-
-                    >
+                        loading="lazy" width="1536" height="1024">
 
                     <div class="p-6">
 
@@ -553,9 +542,7 @@
 
                         onerror="this.src='/assets/images/locksmith-van.webp'"
 
-                        loading="lazy"
-
-                    >
+                        loading="lazy" width="1536" height="1024">
 
                     <div class="p-6">
 
@@ -606,8 +593,7 @@
                         alt="Car Lockout Service Staten Island - What to Do When Locked Out"
                         class="w-full h-48 object-cover lazy"
                         onerror="this.src='/assets/images/locksmith-van.webp'"
-                        loading="lazy"
-                    >
+                        loading="lazy" width="1536" height="1024">
                     <div class="p-6">
                         <div class="flex items-center mb-3">
                             <span class="bg-error text-white px-2 py-1 rounded text-xs font-medium">Emergency</span>
@@ -643,9 +629,7 @@
 
                         onerror="this.src='/assets/images/locksmith-van.webp'"
 
-                        loading="lazy"
-
-                    >
+                        loading="lazy" width="1536" height="1024">
 
                     <div class="p-6">
 
@@ -948,12 +932,12 @@
     <section class="py-8 bg-white border-t border-gray-200">
         <div class="container mx-auto px-4">
             <div class="flex flex-wrap justify-center items-center gap-6 md:gap-12 opacity-90">
-                <img src="/assets/images/bbb_a_plus_badge.webp" alt="BBB A+ Badge" class="h-12 md:h-16 object-contain flex-shrink-0 max-w-[150px]">
-                <img src="/assets/images/emergency_services_247.webp" alt="24/7 Emergency Services" class="h-12 md:h-16 object-contain flex-shrink-0 max-w-[150px]">
-                <img src="/assets/images/licensed_insured.webp" alt="Licensed & Insured" class="h-12 md:h-16 object-contain flex-shrink-0 max-w-[150px]">
-                <img src="/assets/images/warranty_shield.webp" alt="Warranty Shield" class="h-12 md:h-16 object-contain flex-shrink-0 max-w-[150px]">
-                <img src="/assets/images/aloa_security_professionals_logo.webp" alt="ALOA Security Professionals" class="h-12 md:h-16 object-contain flex-shrink-0 max-w-[150px]">
-                <img src="/assets/images/payment_cards.webp" alt="Payment Cards Accepted" class="h-12 md:h-16 object-contain flex-shrink-0 max-w-[150px]">
+                <img src="/assets/images/bbb_a_plus_badge.webp" alt="BBB A+ Badge" class="h-12 md:h-16 object-contain flex-shrink-0 max-w-[150px]" width="167" height="168" loading="lazy">
+                <img src="/assets/images/emergency_services_247.webp" alt="24/7 Emergency Services" class="h-12 md:h-16 object-contain flex-shrink-0 max-w-[150px]" width="455" height="256" loading="lazy">
+                <img src="/assets/images/licensed_insured.webp" alt="Licensed & Insured" class="h-12 md:h-16 object-contain flex-shrink-0 max-w-[150px]" width="900" height="390" loading="lazy">
+                <img src="/assets/images/warranty_shield.webp" alt="Warranty Shield" class="h-12 md:h-16 object-contain flex-shrink-0 max-w-[150px]" width="455" height="256" loading="lazy">
+                <img src="/assets/images/aloa_security_professionals_logo.webp" alt="ALOA Security Professionals" class="h-12 md:h-16 object-contain flex-shrink-0 max-w-[150px]" width="380" height="478" loading="lazy">
+                <img src="/assets/images/payment_cards.webp" alt="Payment Cards Accepted" class="h-12 md:h-16 object-contain flex-shrink-0 max-w-[150px]" width="900" height="540" loading="lazy">
             </div>
         </div>
     </section>

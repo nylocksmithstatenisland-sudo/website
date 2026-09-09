@@ -24,6 +24,8 @@ RewriteRule ^services/safe-services$ /services/safe-opening-security [L,R=301]
 RewriteRule ^services/key-duplication$ /services/key-duplication-rekeying [L,R=301]
 # /services -> /services/emergency-locksmith
 RewriteRule ^services$ /services/emergency-locksmith [L,R=301]
+# /services/emergency-locksmith/office-lockout -> /services/commercial-locksmith/office-lockout (duplicate page)
+RewriteRule ^services/emergency-locksmith/office-lockout(\.html)?$ /services/commercial-locksmith/office-lockout [L,R=301]
 # /assets/images/placeholder-blog.jpg -> /assets/images/locksmith-van.webp
 RewriteRule ^assets/images/placeholder-blog\.jpg$ /assets/images/locksmith-van.webp [L,R=301]
 
@@ -57,7 +59,7 @@ RewriteRule ^.+assets/(css|js|images)/([^/]+)$ /assets/%1/%2 [L,R=301,NC]
     Header always set X-Frame-Options "DENY"
     Header always set X-XSS-Protection "1; mode=block"
     Header always set Referrer-Policy "strict-origin-when-cross-origin"
-    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://cdnjs.cloudflare.com https://fonts.googleapis.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none';"
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none';"
 </IfModule>
 
 ############################################

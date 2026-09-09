@@ -20,8 +20,5 @@ Allow: /assets/images/
 # Allow access to sitemap
 Allow: /sitemap.xml
 
-# Crawl delay (optional - helps with server load)
-Crawl-delay: 1
-
 # Sitemap location
 Sitemap: https://www.locksmithstatenisland.nyc/sitemap.xml
