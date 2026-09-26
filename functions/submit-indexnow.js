@@ -3,7 +3,7 @@
 // POST (optional body: { "urls": [...] }) to trigger IndexNow submission
 // GET returns status/info
 //
-// This function submits ALL URLs from sitemap.xml (72 URLs) to IndexNow.
+// This function submits ALL URLs from sitemap.xml (73 URLs) to IndexNow.
 
 const ALL_SITEMAP_URLS = [
   // Core pages
@@ -74,6 +74,7 @@ const ALL_SITEMAP_URLS = [
   'https://www.locksmithstatenisland.nyc/locksmith-near-me/westerleigh',
   'https://www.locksmithstatenisland.nyc/locksmith-near-me/port-richmond',
   'https://www.locksmithstatenisland.nyc/locksmith-near-me/prince-bay',
+  'https://www.locksmithstatenisland.nyc/locksmith-near-me/annadale',
 
   // Blog posts
   'https://www.locksmithstatenisland.nyc/blog/how-long-does-it-take-to-program-a-car-key',

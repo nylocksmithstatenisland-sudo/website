@@ -151,6 +151,7 @@ We serve all Staten Island neighborhoods including:
 - /locksmith-near-me/eltingville
 - /locksmith-near-me/port-richmond
 - /locksmith-near-me/prince-bay
+- /locksmith-near-me/annadale
 
 ### Educational Blog Content
 
