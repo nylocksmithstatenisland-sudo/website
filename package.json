@@ -4,6 +4,8 @@
     "tailwindcss": "^3.4.19"
   },
   "scripts": {
-    "build:css": "tailwindcss -c tailwind.config.js -i assets/css/tailwind.src.css -o assets/css/tailwind.min.css --minify"
+    "build:css": "tailwindcss -c tailwind.config.js -i assets/css/tailwind.src.css -o assets/css/tailwind.min.css --minify",
+    "check:deploy": "node tools/post-deploy-check.js",
+    "gsc:compare": "node tools/gsc-compare.js"
   }
 }
