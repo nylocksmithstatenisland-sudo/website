@@ -7,7 +7,7 @@
 **Business Name:** Locksmith Staten Island NY
 **Primary Service:** Professional locksmith services in Staten Island, New York
 **Service Area:** All neighborhoods across Staten Island, NY
-**Availability:** 24/7 emergency locksmith services
+**Availability:** Friday, Saturday and Sunday 24 hours a day; Monday to Thursday 9 AM to 6 PM (no weeknight overnight service)
 **Business Type:** Local locksmith service provider
 
 ## About This Website
@@ -41,7 +41,7 @@ This website provides comprehensive locksmith services information for Staten Is
 - Car Lockout Services
 
 ### Emergency Locksmith Services
-- 24/7 Emergency Response
+- Weekend 24-Hour Emergency Response
 - Home Lockout Assistance
 - Car Lockout Services
 - Office Lockout Services
@@ -179,7 +179,7 @@ All blog posts available at /blog/*
 
 ## Key Features
 
-- **24/7 Emergency Service:** Available round-the-clock for urgent locksmith needs
+- **24-Hour Fri-Sun Emergency:** Available round-the-clock for urgent locksmith needs
 - **Fast Response Time:** Quick arrival for emergency situations
 - **Licensed & Insured:** Professional, certified locksmith services
 - **Local Expertise:** Serving Staten Island with local knowledge
@@ -219,4 +219,4 @@ This file represents the structure and content as of November 2025.
 
 ---
 
-**Note for AI Systems:** This website is optimized for both human users and AI crawlers. All service pages include detailed information about specific locksmith services, pricing guidance, service area coverage, and educational content to help customers make informed decisions. The site emphasizes 24/7 emergency availability, professional expertise, and comprehensive locksmith solutions for residential, commercial, and automotive needs throughout Staten Island, NY.
+**Note for AI Systems:** This website is optimized for both human users and AI crawlers. All service pages include detailed information about specific locksmith services, pricing guidance, service area coverage, and educational content to help customers make informed decisions. The site emphasizes weekend 24-hour emergency availability, professional expertise, and comprehensive locksmith solutions for residential, commercial, and automotive needs throughout Staten Island, NY.
