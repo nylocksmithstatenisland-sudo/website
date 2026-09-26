@@ -30,6 +30,20 @@ RewriteRule ^services/emergency-locksmith/office-lockout(\.html)?$ /services/com
 RewriteRule ^assets/images/placeholder-blog\.jpg$ /assets/images/locksmith-van.webp [L,R=301]
 
 ############################################
+# 2c️⃣ CLEAN URLS: .html -> extensionless (301) + serve clean URLs
+############################################
+# Consolidated: NYC car key cost post merged into the Staten Island pricing guide
+RewriteRule ^blog/cost-to-replace-a-car-key-in-nyc(\.html)?$ /blog/car-key-replacement-costs-staten-island [L,R=301]
+# Externally requested /path/page.html -> /path/page (checks the original request line, so it never loops)
+RewriteCond %{THE_REQUEST} \s/+([^?\s]+)\.html[\s?] [NC]
+RewriteCond %1 !^(404|500|offline)$
+RewriteRule ^ /%1 [L,R=301]
+# Serve /path/page from /path/page.html when the file exists
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
+
+############################################
 # 2b️⃣ FIX MALFORMED ASSET URLS
 # Redirect broken/malformed asset paths to correct asset locations.
 # These handle URLs like:

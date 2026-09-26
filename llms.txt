@@ -159,7 +159,6 @@ All blog posts available at /blog/*
 #### Automotive Topics (/blog/category/automotive)
 - Toyota Key Fob Battery Replacement Guide (/blog/toyota-key-fob-battery-replacement-guide)
 - How Long Does It Take to Program a Car Key (/blog/how-long-does-it-take-to-program-a-car-key)
-- Cost to Replace a Car Key in NYC (/blog/cost-to-replace-a-car-key-in-nyc)
 - Car Key Replacement Costs Staten Island (/blog/car-key-replacement-costs-staten-island)
 - Car Lockout Service Staten Island (/blog/car-lockout-service-staten-island)
 
