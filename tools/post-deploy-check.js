@@ -30,8 +30,9 @@ const PAGES = [
   "/services/automotive-locksmith/car-key-replacement", "/services/key-duplication-rekeying/key-cutting",
   "/services/residential-locksmith/smart-lock-installation", "/services/emergency-locksmith/home-lockout",
   "/services/emergency-locksmith/lockout", "/services/emergency-locksmith/car-lockout",
+  "/commercial-accounts", "/commercial-accounts/account-application", "/commercial-accounts/auto-dealers-fleets",
 ];
-const ASSETS = ["/sitemap.xml", "/assets/css/tailwind.min.css", "/robots.txt"];
+const ASSETS = ["/sitemap.xml", "/assets/css/tailwind.min.css", "/robots.txt", "/assets/docs/vendor-packet.pdf"];
 const VARIANTS = [
   ["https://locksmithstatenisland.nyc/locksmith-near-me/prince-bay", "/locksmith-near-me/prince-bay"],
   ["https://locksmithstatenisland.nyc/services/emergency-locksmith", "/services/emergency-locksmith"],

@@ -7,6 +7,7 @@ module.exports = {
     './blog/**/*.html',
     './services/**/*.html',
     './locksmith-near-me/**/*.html',
+    './commercial-accounts/**/*.html',
   ],
   theme: {
     extend: {

@@ -396,6 +396,9 @@
     </div>
 </div>
 
+                    <a href="/commercial-accounts" class="text-secondary hover:text-primary transition-colors">
+                        Commercial Accounts
+                    </a>
                     <a href="/blog" class="text-secondary hover:text-primary transition-colors">
                         Blog
                     </a>
@@ -509,6 +512,9 @@
                             <a href="/locksmith-near-me" class="block py-1 text-sm font-semibold text-secondary hover:text-primary">All Service Areas</a>
                         </div>
                     </div>
+                    <a href="/commercial-accounts" class="block px-4 py-2 text-secondary hover:text-primary transition-colors">
+                        Commercial Accounts
+                    </a>
                     <a href="/blog" class="block px-4 py-2 text-secondary hover:text-primary transition-colors">
                         Blog
                     </a>
@@ -677,7 +683,10 @@
                         Send Us a Message
                     </h2>
 
-                    <form id="contact-form" class="bg-white p-8 rounded-lg shadow-md" action="contact-form-brevo.php" method="POST">
+                    <form id="contact-form" class="bg-white p-8 rounded-lg shadow-md" action="/api/contact" method="POST">
+                        <input type="hidden" name="form" value="contact">
+                        <input type="hidden" name="page" value="/contact">
+                        <div class="hidden" aria-hidden="true"><label for="company-website">Leave this field empty</label><input type="text" id="company-website" name="company-website" tabindex="-1" autocomplete="off"></div>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                             <div>
                                 <label for="first-name" class="block text-secondary font-medium mb-2">
@@ -866,6 +875,7 @@
                         <li><a href="/services/emergency-locksmith" class="text-light hover:text-accent transition-colors">Emergency Services</a></li>
                         <li><a href="/services/residential-locksmith" class="text-light hover:text-accent transition-colors">Residential Services</a></li>
                         <li><a href="/services/commercial-locksmith" class="text-light hover:text-accent transition-colors">Commercial Services</a></li>
+                        <li><a href="/commercial-accounts" class="text-light hover:text-accent transition-colors">Commercial Accounts</a></li>
                         <li><a href="/services/automotive-locksmith" class="text-light hover:text-accent transition-colors">Automotive Services</a></li>
                         <li><a href="/locksmith-near-me" class="text-light hover:text-accent transition-colors">Service Areas</a></li>
                         <li><a href="/blog" class="text-light hover:text-accent transition-colors">Blog</a></li>
@@ -942,16 +952,12 @@
                 const formData = new FormData(contactForm);
 
                 // Send form data via AJAX to Brevo API handler
-                fetch('contact-form-brevo.php', {
+                fetch('/api/contact', {
                     method: 'POST',
-                    body: formData
+                    body: formData,
+                    headers: { 'Accept': 'application/json' }
                 })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok: ' + response.status);
-                    }
-                    return response.json();
-                })
+                .then(response => response.json())
                 .then(data => {
                     // Reset loading state
                     submitBtn.disabled = false;

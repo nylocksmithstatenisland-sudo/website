@@ -3,7 +3,7 @@
 // POST (optional body: { "urls": [...] }) to trigger IndexNow submission
 // GET returns status/info
 //
-// This function submits ALL URLs from sitemap.xml (73 URLs) to IndexNow.
+// This function submits ALL URLs from sitemap.xml (81 URLs) to IndexNow.
 
 const ALL_SITEMAP_URLS = [
   // Core pages
@@ -11,6 +11,16 @@ const ALL_SITEMAP_URLS = [
   'https://www.locksmithstatenisland.nyc/about',
   'https://www.locksmithstatenisland.nyc/contact',
   'https://www.locksmithstatenisland.nyc/blog',
+
+  // Commercial accounts section
+  'https://www.locksmithstatenisland.nyc/commercial-accounts',
+  'https://www.locksmithstatenisland.nyc/commercial-accounts/property-management',
+  'https://www.locksmithstatenisland.nyc/commercial-accounts/co-op-condo-boards',
+  'https://www.locksmithstatenisland.nyc/commercial-accounts/contractors-new-construction',
+  'https://www.locksmithstatenisland.nyc/commercial-accounts/auto-dealers-fleets',
+  'https://www.locksmithstatenisland.nyc/commercial-accounts/institutions-government',
+  'https://www.locksmithstatenisland.nyc/commercial-accounts/account-application',
+  'https://www.locksmithstatenisland.nyc/commercial-accounts/vendor-packet',
 
   // Main service pages
   'https://www.locksmithstatenisland.nyc/services/emergency-locksmith',

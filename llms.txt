@@ -31,6 +31,13 @@ This website provides comprehensive locksmith services information for Staten Is
 - Office Lockout Services
 - Commercial Lock Installation & Repair
 
+### Commercial Accounts (B2B)
+- Account-based service for property managers, co-op and condo boards, contractors, auto dealers, rental branches, tow yards, fleets, schools, hospitals and city agencies
+- Priority dispatch, agreed rate sheet, card on file for new accounts, Net-30 after credit approval, one consolidated monthly invoice
+- Starting prices: rekey from $15 per lock, lock installation from $75 per door, access control from $800 per door, car keys from $50, transponder keys from $75, smart keys from $150
+- Insured through Ergo Next, NYC DCWP licensed (number on request), NASTF member, 5+ years in business, 10% off first job for new accounts
+- Pages: /commercial-accounts, /commercial-accounts/property-management, /commercial-accounts/co-op-condo-boards, /commercial-accounts/contractors-new-construction, /commercial-accounts/auto-dealers-fleets, /commercial-accounts/institutions-government, /commercial-accounts/account-application, /commercial-accounts/vendor-packet
+
 ### Automotive Locksmith Services
 - Car Key Replacement
 - Transponder Key Programming
