@@ -33,7 +33,7 @@ const PAGES = [
   "/commercial-accounts", "/commercial-accounts/account-application", "/commercial-accounts/auto-dealers-fleets",
   "/services/automotive-locksmith/emergency-car-key-replacement", "/services/key-duplication-rekeying/lost-key-replacement",
 ];
-const ASSETS = ["/sitemap.xml", "/assets/css/tailwind.min.css", "/robots.txt", "/assets/docs/vendor-packet.pdf"];
+const ASSETS = ["/sitemap.xml", "/assets/css/tailwind.min.css", "/robots.txt", "/assets/docs/vendor-packet.pdf", "/assets/docs/credit-application.pdf"];
 const VARIANTS = [
   ["https://locksmithstatenisland.nyc/locksmith-near-me/prince-bay", "/locksmith-near-me/prince-bay"],
   ["https://locksmithstatenisland.nyc/services/emergency-locksmith", "/services/emergency-locksmith"],
