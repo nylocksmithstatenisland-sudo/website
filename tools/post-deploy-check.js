@@ -31,6 +31,7 @@ const PAGES = [
   "/services/residential-locksmith/smart-lock-installation", "/services/emergency-locksmith/home-lockout",
   "/services/emergency-locksmith/lockout", "/services/emergency-locksmith/car-lockout",
   "/commercial-accounts", "/commercial-accounts/account-application", "/commercial-accounts/auto-dealers-fleets",
+  "/services/automotive-locksmith/emergency-car-key-replacement", "/services/key-duplication-rekeying/lost-key-replacement",
 ];
 const ASSETS = ["/sitemap.xml", "/assets/css/tailwind.min.css", "/robots.txt", "/assets/docs/vendor-packet.pdf"];
 const VARIANTS = [

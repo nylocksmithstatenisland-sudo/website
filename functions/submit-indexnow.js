@@ -3,7 +3,7 @@
 // POST (optional body: { "urls": [...] }) to trigger IndexNow submission
 // GET returns status/info
 //
-// This function submits ALL URLs from sitemap.xml (81 URLs) to IndexNow.
+// This function submits ALL URLs from sitemap.xml (83 URLs) to IndexNow.
 
 const ALL_SITEMAP_URLS = [
   // Core pages
@@ -47,6 +47,7 @@ const ALL_SITEMAP_URLS = [
 
   // Automotive sub-services
   'https://www.locksmithstatenisland.nyc/services/automotive-locksmith/car-key-replacement',
+  'https://www.locksmithstatenisland.nyc/services/automotive-locksmith/emergency-car-key-replacement',
   'https://www.locksmithstatenisland.nyc/services/automotive-locksmith/ignition-repair',
   'https://www.locksmithstatenisland.nyc/services/automotive-locksmith/key-fob-programming',
   'https://www.locksmithstatenisland.nyc/services/automotive-locksmith/car-door-unlocking',
@@ -59,6 +60,7 @@ const ALL_SITEMAP_URLS = [
 
   // Key duplication & rekeying sub-services
   'https://www.locksmithstatenisland.nyc/services/key-duplication-rekeying/key-cutting',
+  'https://www.locksmithstatenisland.nyc/services/key-duplication-rekeying/lost-key-replacement',
   'https://www.locksmithstatenisland.nyc/services/key-duplication-rekeying/rekey-service',
 
   // Safe opening & security sub-services

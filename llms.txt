@@ -123,6 +123,7 @@ We serve all Staten Island neighborhoods including:
 
 #### Automotive Services
 - /services/automotive-locksmith/car-key-replacement
+- /services/automotive-locksmith/emergency-car-key-replacement
 - /services/automotive-locksmith/car-door-unlocking
 - /services/automotive-locksmith/transponder-key-service
 - /services/automotive-locksmith/key-fob-programming
@@ -146,6 +147,7 @@ We serve all Staten Island neighborhoods including:
 
 #### Key Duplication & Rekeying Services
 - /services/key-duplication-rekeying/key-cutting
+- /services/key-duplication-rekeying/lost-key-replacement
 - /services/key-duplication-rekeying/rekey-service
 
 ### Location-Based Service Pages
