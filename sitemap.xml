@@ -159,6 +159,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://www.locksmithstatenisland.nyc/services/automotive-locksmith/emergency-car-key-replacement</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
   <url>
     <loc>https://www.locksmithstatenisland.nyc/services/automotive-locksmith/ignition-repair</loc>
@@ -214,6 +220,12 @@
   <url>
     <loc>https://www.locksmithstatenisland.nyc/services/key-duplication-rekeying/key-cutting</loc>
     <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.locksmithstatenisland.nyc/services/key-duplication-rekeying/lost-key-replacement</loc>
+    <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

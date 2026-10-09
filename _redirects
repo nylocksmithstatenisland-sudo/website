@@ -67,6 +67,7 @@ https://locksmithstatenisland.nyc/* https://www.locksmithstatenisland.nyc/:splat
 /services/automotive-locksmith.html /services/automotive-locksmith 301
 /services/automotive-locksmith/car-door-unlocking.html /services/automotive-locksmith/car-door-unlocking 301
 /services/automotive-locksmith/car-key-replacement.html /services/automotive-locksmith/car-key-replacement 301
+/services/automotive-locksmith/emergency-car-key-replacement.html /services/automotive-locksmith/emergency-car-key-replacement 301
 /services/automotive-locksmith/ignition-repair.html /services/automotive-locksmith/ignition-repair 301
 /services/automotive-locksmith/key-fob-programming.html /services/automotive-locksmith/key-fob-programming 301
 /services/automotive-locksmith/transponder-key-service.html /services/automotive-locksmith/transponder-key-service 301
@@ -83,6 +84,7 @@ https://locksmithstatenisland.nyc/* https://www.locksmithstatenisland.nyc/:splat
 /services/emergency-locksmith/lockout.html /services/emergency-locksmith/lockout 301
 /services/key-duplication-rekeying.html /services/key-duplication-rekeying 301
 /services/key-duplication-rekeying/key-cutting.html /services/key-duplication-rekeying/key-cutting 301
+/services/key-duplication-rekeying/lost-key-replacement.html /services/key-duplication-rekeying/lost-key-replacement 301
 /services/key-duplication-rekeying/rekey-service.html /services/key-duplication-rekeying/rekey-service 301
 /services/lock-installation-repair.html /services/lock-installation-repair 301
 /services/lock-installation-repair/door-reinforcement.html /services/lock-installation-repair/door-reinforcement 301
