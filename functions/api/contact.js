@@ -33,6 +33,29 @@ const FORMS = {
   },
 };
 
+// Spanish messages for forms submitted from the /es/ pages (they send lang=es).
+const ES = {
+  forms: {
+    contact: {
+      required: { 'first-name': 'El nombre', 'last-name': 'El apellido', email: 'El correo electrónico', phone: 'El teléfono', message: 'El mensaje' },
+      success: '¡Gracias! Su mensaje fue enviado. Le responderemos dentro de 24 horas, o llámenos ahora al ' + PHONE + '.',
+    },
+    'commercial-account': {
+      required: { company: 'La empresa', segment: 'El tipo de cuenta', 'contact-name': 'Su nombre', email: 'El correo electrónico de trabajo', phone: 'El teléfono', consent: 'El consentimiento' },
+      success: 'Solicitud recibida. Le responderemos desde info@locksmithstatenisland.nyc dentro de un día hábil con su hoja de tarifas. Su primer trabajo tiene 10% de descuento.',
+    },
+  },
+  required: (label) => `${label} es obligatorio`,
+  invalidEmail: 'Ingrese un correo electrónico válido',
+  invalidPhone: 'Ingrese un número de teléfono válido',
+  correct: 'Por favor corrija lo siguiente:',
+  unreadable: 'No pudimos leer el formulario.',
+  unknown: 'Formulario desconocido.',
+  thanks: 'Gracias.',
+  unavailable: `Nuestro formulario no está disponible por el momento. Escríbanos a ${TO_EMAIL} o llame al ${PHONE}.`,
+  failed: `No pudimos enviar su mensaje en este momento. Escríbanos a ${TO_EMAIL} o llame al ${PHONE}.`,
+};
+
 const MAX_FIELD = 4000;
 const HONEYPOT = 'company-website';
 
@@ -76,6 +99,7 @@ function buildText(spec, fields, request) {
     if (fields[key]) lines.push(`${label}: ${fields[key]}`);
   }
   lines.push('');
+  if (fields.lang === 'es') lines.push('Language: Spanish (submitted from the /es/ site)');
   lines.push(`Submitted: ${new Date().toISOString()}`);
   lines.push(`Page: ${fields.page || request.headers.get('Referer') || 'unknown'}`);
   const ip = request.headers.get('CF-Connecting-IP');
@@ -110,28 +134,30 @@ export async function onRequestPost(context) {
   } catch (e) {
     return json({ success: false, message: 'Could not read the form.' }, 400, origin);
   }
+  const es = fields.lang === 'es';
 
   // Bots fill every field; humans never see this one.
   if (fields[HONEYPOT]) {
-    return json({ success: true, message: 'Thank you.' }, 200, origin);
+    return json({ success: true, message: es ? ES.thanks : 'Thank you.' }, 200, origin);
   }
 
   const spec = FORMS[fields.form || 'contact'];
-  if (!spec) return json({ success: false, message: 'Unknown form.' }, 400, origin);
+  if (!spec) return json({ success: false, message: es ? ES.unknown : 'Unknown form.' }, 400, origin);
+  const esSpec = ES.forms[fields.form || 'contact'] || {};
 
   const errors = [];
   for (const [key, label] of Object.entries(spec.required)) {
-    if (!fields[key]) errors.push(`${label} is required`);
+    if (!fields[key]) errors.push(es ? ES.required((esSpec.required || {})[key] || label) : `${label} is required`);
   }
-  if (fields.email && !validEmail(fields.email)) errors.push('Please enter a valid email address');
-  if (fields.phone && !validPhone(fields.phone)) errors.push('Please enter a valid phone number');
+  if (fields.email && !validEmail(fields.email)) errors.push(es ? ES.invalidEmail : 'Please enter a valid email address');
+  if (fields.phone && !validPhone(fields.phone)) errors.push(es ? ES.invalidPhone : 'Please enter a valid phone number');
   if (errors.length) {
-    return json({ success: false, message: 'Please correct the following:', errors }, 422, origin);
+    return json({ success: false, message: es ? ES.correct : 'Please correct the following:', errors }, 422, origin);
   }
 
   if (!env.BREVO_API_KEY) {
     return json(
-      { success: false, message: `Our form is temporarily unavailable. Please email ${TO_EMAIL} or call ${PHONE}.` },
+      { success: false, message: es ? ES.unavailable : `Our form is temporarily unavailable. Please email ${TO_EMAIL} or call ${PHONE}.` },
       503,
       origin
     );
@@ -144,7 +170,7 @@ export async function onRequestPost(context) {
     replyTo: { email: fields.email, name: replyName },
     subject: spec.subject(fields),
     textContent: buildText(spec, fields, request),
-    tags: ['website', fields.form || 'contact'],
+    tags: ['website', fields.form || 'contact'].concat(es ? ['es'] : []),
   };
 
   try {
@@ -157,7 +183,7 @@ export async function onRequestPost(context) {
       const detail = await res.text().catch(() => '');
       console.error('Brevo error', res.status, detail.slice(0, 500));
       return json(
-        { success: false, message: `We could not send your message right now. Please email ${TO_EMAIL} or call ${PHONE}.` },
+        { success: false, message: es ? ES.failed : `We could not send your message right now. Please email ${TO_EMAIL} or call ${PHONE}.` },
         502,
         origin
       );
@@ -165,11 +191,11 @@ export async function onRequestPost(context) {
   } catch (e) {
     console.error('Brevo request failed', e && e.message);
     return json(
-      { success: false, message: `We could not send your message right now. Please email ${TO_EMAIL} or call ${PHONE}.` },
+      { success: false, message: es ? ES.failed : `We could not send your message right now. Please email ${TO_EMAIL} or call ${PHONE}.` },
       502,
       origin
     );
   }
 
-  return json({ success: true, message: spec.success }, 200, origin);
+  return json({ success: true, message: es && esSpec.success ? esSpec.success : spec.success }, 200, origin);
 }

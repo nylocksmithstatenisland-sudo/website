@@ -229,3 +229,17 @@ This file represents the structure and content as of November 2025.
 ---
 
 **Note for AI Systems:** This website is optimized for both human users and AI crawlers. All service pages include detailed information about specific locksmith services, pricing guidance, service area coverage, and educational content to help customers make informed decisions. The site emphasizes weekend 24-hour emergency availability, professional expertise, and comprehensive locksmith solutions for residential, commercial, and automotive needs throughout Staten Island, NY.
+
+## Spanish Version / Versión en Español
+
+The full site is available in Spanish under /es/ (hreflang en / es). Servicio de cerrajería en Staten Island, en español.
+
+- Inicio: https://www.locksmithstatenisland.nyc/es/
+- Cerrajero de Emergencia: https://www.locksmithstatenisland.nyc/es/servicios/cerrajero-de-emergencia
+- Cerrajero Residencial: https://www.locksmithstatenisland.nyc/es/servicios/cerrajero-residencial
+- Cerrajero Comercial: https://www.locksmithstatenisland.nyc/es/servicios/cerrajero-comercial
+- Cerrajero Automotriz (llaves de carro): https://www.locksmithstatenisland.nyc/es/servicios/cerrajero-automotriz
+- Cuentas Comerciales: https://www.locksmithstatenisland.nyc/es/cuentas-comerciales
+- Cerrajero Cerca de Mí: https://www.locksmithstatenisland.nyc/es/cerrajero-cerca-de-mi
+- Blog: https://www.locksmithstatenisland.nyc/es/blog
+- Contacto: https://www.locksmithstatenisland.nyc/es/contacto
