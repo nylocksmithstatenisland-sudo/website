@@ -20,5 +20,17 @@ Allow: /assets/images/
 # Allow access to sitemap
 Allow: /sitemap.xml
 
+# AI search and assistant crawlers: allowed (pages are meant to be cited)
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: PerplexityBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: Bingbot
+Allow: /
+
 # Sitemap location
 Sitemap: https://www.locksmithstatenisland.nyc/sitemap.xml
