@@ -8,6 +8,7 @@ module.exports = {
     './services/**/*.html',
     './locksmith-near-me/**/*.html',
     './commercial-accounts/**/*.html',
+    './es/**/*.html',
   ],
   theme: {
     extend: {
