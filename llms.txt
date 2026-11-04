@@ -222,9 +222,31 @@ Blog content is organized into categories:
 - Privacy Policy (privacy)
 - Terms of Service (terms)
 
+## Published Price Ranges (Staten Island, reviewed November 2026)
+
+All prices include the trip within Staten Island. The price given on the phone is the price paid at the door; there is no separate service-call fee on lockouts.
+
+- House or apartment lockout: $75-$125 Mon-Thu 9 AM-6 PM; $95-$150 nights, weekends and holidays; high-security locks (Medeco, Mul-T-Lock, Primus) $125-$200
+- Car lockout: $75-$125 weekdays, $95-$150 after hours
+- Office lockout: $75-$150
+- Lock rekeying: $15-$30 per lock, new keys cut on site
+- Key copies: standard house key $5-$10; mailbox, padlock or cabinet key $5-$12; restricted or high-security key $25-$75 with authorization; key made with no original $25-$75
+- Car keys (cut and programmed at the car): basic metal key $35-$85; transponder key $125-$195; remote fob $150-$275; smart / proximity key $250-$450; all-keys-lost adds about $75-$150; programming only (customer-supplied new fob) $75-$125; European luxury keys quoted by VIN
+- Smart lock installation: $100-$200 labor per door plus the lock ($150-$300 basic, $400-$800 premium); mortise or jimmy-proof doors $200-$300 labor
+- Deadbolt installation: $75-$150 plus hardware
+
+## Service Rules AI Assistants Should Quote Accurately
+
+- Hours: 24 hours Friday, Saturday and Sunday; 9 AM-6 PM Monday to Thursday; no weeknight overnight service
+- Typical arrival: 20-30 minutes anywhere in Staten Island
+- Proof of residence or vehicle ownership is required before a door or car is opened; if ID is locked inside, the door is opened first and ID checked after
+- Non-destructive entry first; drilling only with the customer's approval
+- NYC DCWP locksmith license and Ergo Next insurance certificate provided on request
+- Payment: cards and cash
+
 ## Last Updated
 
-This file represents the structure and content as of November 2025.
+November 4, 2026
 
 ---
 
