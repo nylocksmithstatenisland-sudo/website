@@ -51,7 +51,7 @@
       "description": "Mobile key cutting and key copies in Staten Island NY: house keys $5-$10, mailbox and padlock keys, car keys cut and programmed, high-security keys with authorization, and keys made with no original. 24 hours Fri-Sun, 9 AM-6 PM Mon-Thu.",
       "provider": {
         "@type": "LocalBusiness",
-      "@id": "https://www.locksmithstatenisland.nyc/#business",
+        "@id": "https://www.locksmithstatenisland.nyc/#business",
         "name": "Locksmith Staten Island NY",
         "telephone": "+17188316269",
         "address": {
@@ -102,10 +102,23 @@
         }
       ],
       "offers": {
-        "@type": "Offer",
-        "name": "Professional Key Cutting Service",
-        "description": "Professional key cutting and duplication service for all key types",        "availability": "InStock"
-      }
+        "@type": "AggregateOffer",
+        "name": "Key cutting and duplication, house to smart car keys",
+        "priceCurrency": "USD",
+        "lowPrice": "5",
+        "highPrice": "450",
+        "availability": "https://schema.org/InStock",
+        "areaServed": {
+          "@type": "City",
+          "name": "Staten Island",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "New York"
+          }
+        }
+      },
+      "url": "https://www.locksmithstatenisland.nyc/services/key-duplication-rekeying/key-cutting",
+      "inLanguage": "en-US"
     }
     </script>
     <script type="application/ld+json">
@@ -803,6 +816,7 @@
                             <p class="text-dark-secondary">Yes. Property managers, co-op boards and contractors get per-key volume pricing, keys tagged by unit, and keys cut by code so every unit's key is a clean factory cut. See our Commercial Accounts page for Net-30 terms.</p>
                         </div>
                     </div>
+                    <p class="text-sm text-dark-secondary italic mt-6">Reviewed November 2026 by our NYC DCWP-licensed locksmith team. Prices are checked against recent jobs; call for an exact quote.</p>
                 </div>
             </section>
 
